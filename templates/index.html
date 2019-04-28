@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<title>📰 Fake News Detection Application</title>
+
+
+<style type="text/css">
+	#bibin{
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,7db9e8+100&1+0,1+62,0.7+68,0+100;Blue+to+Transparent+Sharp */
+background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(89,148,202,1) 62%, rgba(95,154,207,0.7) 68%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(89,148,202,1) 62%,rgba(95,154,207,0.7) 68%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(89,148,202,1) 62%,rgba(95,154,207,0.7) 68%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+	}
+</style>
+</head>
+<body>
+	<br>
+	<br>
+<div class="container">
+	<div class="jumbotron jumbotron-fluid" style="background-color:white" id="bibin">
+    <h2 style="color:white">News analysis Platform</h2> 
+    <p><h4>Put here a news to analyse it.</h4></p> 
+  </div>
+<form method="post" action="{{ url_for('main') }}">
+  <div class="form-group">
+    <label for="Review">News</label>
+    <textarea name="review" class="form-control" placeholder="Enter News"></textarea> 
+    <small class="form-text text-muted">Enter news here.</small>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary" style="background-color:green">Submit</button>
+</form>
+<footer><br><br><br><br><br><br><br>
+	<h6 align="center">Made with ❤️ in cec 😎</h6> 
+</footer>
+</body>
+</div>
+</html>
